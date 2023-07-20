@@ -87,7 +87,7 @@ public abstract class AbstractAlarmEntity<T extends Alarm> extends BaseSqlEntity
     @Column(name = ALARM_SEVERITY_PROPERTY)
     private AlarmSeverity severity;
 
-    @Type(type="pg-uuid")
+    @Type(type="org.hibernate.type.PostgresUUIDType")
     @Column(name = ALARM_ASSIGNEE_ID_PROPERTY)
     private UUID assigneeId;
 
